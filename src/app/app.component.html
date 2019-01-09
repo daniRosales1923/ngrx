@@ -1,0 +1,12 @@
+
+<main class="main" *ngIf="(Load$ | async); else loading">
+    <nav-bar></nav-bar>
+    <home></home>
+    hola
+    <app-post></app-post>
+</main>
+
+<ng-template #loading>
+    Cargando...
+</ng-template>
+
